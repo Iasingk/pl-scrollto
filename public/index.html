@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>PL ScrollTo</title>
+
+		<!-- Load styles -->
+		<link rel="stylesheet" href="stylesheets/styles.css">
+	</head>
+	<body>
+		
+		<!-- Navigation -->
+		<nav id="navigation">
+			<ul>
+				<li><a href="#us">Us</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#products">Products</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Us block -->
+		<div class="block" id="us">
+			<h2 class="title">Us</h2>
+		</div>
+
+		<!-- Services block -->
+		<div class="block" id="services">
+			<h2 class="title">Services</h2>
+		</div>
+
+		<!-- Products block -->
+		<div class="block" id="products">
+			<h2 class="title">Products</h2>
+		</div>
+
+		<!-- Contact block -->
+		<div class="block" id="contact">
+			<h2 class="title">Contact</h2>
+		</div>
+
+		<!-- Load scripts -->
+		<script src="scripts/pl-scrollto.js"></script>
+		<!-- Usage example -->
+		<script>
+			(function (d) {
+				'use strict';
+
+				// Retrieve navigation links.
+				var links = d.querySelectorAll('#navigation a');
+
+				// Traversing links.
+				[].forEach.call(links, function (link) {
+
+					// Attach click handler to each link.
+					link.addEventListener('click', function (e) {
+						e.preventDefault();
+
+						var anchor = link.getAttribute('href');
+
+						pl.ScrollTo.byHash(anchor);
+					});
+
+				});
+
+			})(document);
+		</script>
+	</body>
+</html>

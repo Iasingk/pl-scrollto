@@ -1,0 +1,22 @@
+{
+  "name": "pl-scrollto",
+  "version": "1.0.0",
+  "description": "Code made with pure javascript to navigate a web page using anchors.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "html5",
+    "scroll",
+    "anchors"
+  ],
+  "author": "cesarmejia",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-typescript": "^2.13.4"
+  }
+}
